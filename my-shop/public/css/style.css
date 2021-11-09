@@ -1,0 +1,56 @@
+body{
+    margin: 0%;
+    padding: 0%;
+  
+}
+
+.row{
+    height: 800px;
+    width: 100%;
+    
+}
+.row-1{
+    height: 400px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.row-2{
+    height: 400px;
+    width: 100%;
+    background-color: antiquewhite;
+    
+}
+
+.col{
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: center;
+
+    
+}
+.input{
+    width: 200px;
+    height: 20px;
+    margin-bottom: 5px;
+    border: 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    
+}
+
+#product-category{
+    margin-bottom: 5px;
+    height: 22px;
+    width: 205px;
+    text-align: center;
+}
+.button{
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(72, 132, 221);
+    color: white;
+
+}

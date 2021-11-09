@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Shop</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+
+       <div class="row">
+           <div class="row-1">
+               <div class="col">
+                   <form action="" method="post">
+                        <h2>Add Product</h2>
+                        
+                        <input class="input" type="text" name="productId" placeholder="Id"><br>
+                        <input class="input" type="text" name="productName" placeholder="name"><br>
+                        <input class="input" type="text" name="productCompany" placeholder="company"><br>
+                        <input class="input" type="text" name="productPrice" placeholder="price"><br>
+                        <select id="product-category" name="productCategory">
+                            <option value="">-- category --</option>
+                            <option value="biscuit">Biscuit</option>
+                            <option value="cold-drink">Cold-Drink</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="candy">Candy</option>
+                        </select>   <br>
+                        <button class="button" type="submit" value="submit" name="submitButton">Save</button>
+                   </form>
+               </div>
+               <div class="col">
+                   <form>
+                        <h2>Update Product</h2>
+                        <select id="product-category" name="productCategory">
+                            <option value="">-- category --</option>
+                            <option value="biscuit">Biscuit</option>
+                            <option value="cold-drink">Cold-Drink</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="candy">Candy</option>
+                        </select>   <br>
+                        <input class="input" type="text" name="productCompany" placeholder="company"><br>
+                        <input class="input" type="text" name="productPrice" placeholder="price"><br>
+                        <button class="button" type="submit" value="submit" name="updateButton">Update</button>
+                   </form>
+               </div>
+           </div>
+           <div class="row-2">
+               <div class="col">
+                   <form>
+                        <h2>Show Product</h2>
+
+                        <select id="product-category" name="productCategory">
+                            <option value="">-- category --</option>
+                            <option value="biscuit">Biscuit</option>
+                            <option value="cold-drink">Cold-Drink</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="candy">Candy</option>
+                        </select>   <br>
+                        <button class="button" type="submit" value="submit" name="showButton">Update</button>
+                   </form>
+               </div>
+               <div class="col">
+
+                   <form>
+                        <h2>Remove Product</h2>
+                         <select id="product-category" name="productCategory">
+                            <option value="">-- category --</option>
+                            <option value="biscuit">Biscuit</option>
+                            <option value="cold-drink">Cold-Drink</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="candy">Candy</option>
+                        </select>   <br>
+                        <button class="button" type="submit" value="submit" name="showButton">Update</button>
+
+                   </form>  
+               </div>
+           </div>
+       </div>
+
+       <script src="/js/validation.js"></script>
+
+    </body>
+</html>
