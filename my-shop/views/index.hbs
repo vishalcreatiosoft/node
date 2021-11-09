@@ -9,7 +9,7 @@
        <div class="row">
            <div class="row-1">
                <div class="col">
-                   <form action="" method="post">
+                   <form action="/add" method="POST">
                         <h2>Add Product</h2>
                         
                         <input class="input" type="text" name="productId" placeholder="Id"><br>
@@ -22,12 +22,16 @@
                             <option value="cold-drink">Cold-Drink</option>
                             <option value="chocolate">Chocolate</option>
                             <option value="candy">Candy</option>
+                            <option value="snacks">Snacks</option>
+                            <option value="sweets">Sweets</option>
+                            <option value="oil">Oil</option>
+                            <option value="flour">Flour</option>
                         </select>   <br>
-                        <button class="button" type="submit" value="submit" name="submitButton">Save</button>
+                        <button class="button" type="submit" value="Submit" name="submitButton">Save</button>
                    </form>
                </div>
                <div class="col">
-                   <form>
+                   <form action="/update" method="POST">
                         <h2>Update Product</h2>
                         <select id="product-category" name="productCategory">
                             <option value="">-- category --</option>
@@ -35,6 +39,10 @@
                             <option value="cold-drink">Cold-Drink</option>
                             <option value="chocolate">Chocolate</option>
                             <option value="candy">Candy</option>
+                            <option value="snacks">Snacks</option>
+                            <option value="sweets">Sweets</option>
+                            <option value="oil">Oil</option>
+                            <option value="flour">Flour</option>
                         </select>   <br>
                         <input class="input" type="text" name="productCompany" placeholder="company"><br>
                         <input class="input" type="text" name="productPrice" placeholder="price"><br>
@@ -44,7 +52,7 @@
            </div>
            <div class="row-2">
                <div class="col">
-                   <form>
+                   <form action="/show" method="POST">
                         <h2>Show Product</h2>
 
                         <select id="product-category" name="productCategory">
@@ -53,13 +61,17 @@
                             <option value="cold-drink">Cold-Drink</option>
                             <option value="chocolate">Chocolate</option>
                             <option value="candy">Candy</option>
+                            <option value="snacks">Snacks</option>
+                            <option value="sweets">Sweets</option>
+                            <option value="oil">Oil</option>
+                            <option value="flour">Flour</option>
                         </select>   <br>
-                        <button class="button" type="submit" value="submit" name="showButton">Update</button>
+                        <button class="button" type="submit" value="submit" name="showButton">Show</button>
                    </form>
                </div>
                <div class="col">
 
-                   <form>
+                   <form action="/remove" method="POST" >
                         <h2>Remove Product</h2>
                          <select id="product-category" name="productCategory">
                             <option value="">-- category --</option>
@@ -67,8 +79,12 @@
                             <option value="cold-drink">Cold-Drink</option>
                             <option value="chocolate">Chocolate</option>
                             <option value="candy">Candy</option>
+                            <option value="snacks">Snacks</option>
+                            <option value="sweets">Sweets</option>
+                            <option value="oil">Oil</option>
+                            <option value="flour">Flour</option>
                         </select>   <br>
-                        <button class="button" type="submit" value="submit" name="showButton">Update</button>
+                        <button class="button" type="submit" value="submit" name="showButton">Remove</button>
 
                    </form>  
                </div>
