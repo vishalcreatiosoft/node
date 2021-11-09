@@ -1,0 +1,50 @@
+h1{
+    margin-top: 80px;
+    margin-bottom: -200px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    height: 800px;
+    width: 100%;
+}
+
+.column-1{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    
+}
+.column-2{
+    
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background-color: rgb(0, 255, 255);    
+}
+.column-3{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    
+}
+input{
+    width: 250px;
+    height: 25px;
+    margin-top: 6px;
+    border-radius: 3px;
+
+}
+button{
+    width: 150px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 100%;
+    margin-top: 20%;
+}

@@ -38,8 +38,13 @@ router.post('/show',async(req, res)=>{
     const productCategory = req.body.productCategory
     const data = await productController.showData(productCategory)
     const findData = JSON.stringify(data)
+    const message = 'Data not available'    
+    const msg = JSON.stringify(message)
+    
+    
     res.render('home',{info : findData})
     res.status(200)
+    
 })
 
 
