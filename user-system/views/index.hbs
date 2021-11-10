@@ -11,14 +11,13 @@
             <div class="column-1"></div>
             
             <div class="column-2">
-                <h1>Welcome to User System</h1>
+                <h1 style="margin-top: 80px; margin-bottom: -200px;">Welcome to User System</h1>
 
-                <form action="/registration" method="POST" > 
+                <form action="/registration" method="POST" enctype="multipart/form-data" > 
                     <table>
                         <tr>
                             <th>Name</th>
-                            
-                            <td><input type="text" name="Name" ></td><br><br>
+                            <td><input type="text" name="name" ></td><br><br>
                         </tr>
                         <tr>
                             <th>Email</th>
@@ -45,11 +44,16 @@
                             <td><input type="text" name="confirmPassword" /></td><br><br>
                         </tr>
                         <tr>
-                          
+                            <th>Upload Picture</th>
+                            <td><input type="file" name="file" ></td><br><br>
+                        </tr>
+                        <tr>
+                            <td></td>
                             <td><button type="submit" value="Submit" name="submit">Register</button><br><br>
                         </tr>
                         <tr>
-                            <td><a href="./login">login</a><br><br>
+                            <td></td>
+                            <td><h4>Already account?</h4><a href="./login">login</a><br><br>
                         </tr>
                     </table>  
 

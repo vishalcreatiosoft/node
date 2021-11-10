@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="row">
-        <div class="column-1"></div>
-        <div class="column-2">
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        
 
-            <form action="/login" method="POST">
-                <table>
-                    <tr>
-                        <th>Email</th>
-                        <input type="email" name="email" placeholder="abc@gmail.com"><br><br>
-                    </tr>
-                    <tr>
-                        <th>Password</th>
-                        <input type="text" name="password">
-                    </tr>
-                    <tr>
-                        <button type="submit" value="Submit" name="submit"></button><br><br>
-                    </tr>
-                    
-                </table>
-
-
+        <div class="row">
+            <div class="column-1"></div>
             
-            </form>
+            <div class="column-2">
+                
+
+                <form action="/login" method="POST" > 
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><h2 style="margin-top: 150px;"> User Login</h2></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td><input type="email" name="email" /></td><br><br>
+                        </tr>
+                        <tr>
+                            <th>Password</th>
+                            <td><input type="text" name="password" /></td><br><br>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit" value="Submit" name="submit">Login</button><br><br>
+                        </tr>
+                        
+                    </table>  
+
+                </form>
+
+            </div>
+            
+            <div class="column-3"></div>
+            
 
         </div>
-        <div class="column-3"></div>
-    </div>
-</body>
+
+
+
+
+    </body>
 </html>

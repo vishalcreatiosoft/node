@@ -1,7 +1,4 @@
-h1{
-    margin-top: 80px;
-    margin-bottom: -200px;
-}
+
 body{
     margin: 0;
     padding: 0;
@@ -16,6 +13,7 @@ body{
     width: 33.33%;
     height: 100%;
     float: left;
+    background-color: rgb(0, 255, 255);  
     
 }
 .column-2{
@@ -25,11 +23,16 @@ body{
     float: left;
     text-align: center;
     background-color: rgb(0, 255, 255);    
+    display: flexbox;
+    justify-content:flex-end;
+    text-justify: inter-word;
+    
 }
 .column-3{
     width: 33.33%;
     height: 100%;
     float: left;
+    background-color: rgb(0, 255, 255);  
     
 }
 input{
@@ -37,6 +40,7 @@ input{
     height: 25px;
     margin-top: 6px;
     border-radius: 3px;
+    
 
 }
 button{
@@ -45,6 +49,56 @@ button{
     background-color: black;
     color: white;
     border-radius: 10px;
-    margin-left: 100%;
     margin-top: 20%;
+}
+
+.left-column-home{
+    
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color :rgb(248, 246, 242)
+}
+
+.middle-column-home{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background-color: rgb(0, 255, 255);    
+    display: flexbox;
+    justify-content:flex-end;
+    text-justify: inter-word;
+}
+.right-column-home{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: rgb(248, 246, 242)
+}
+.profile-div{
+    width: 90%;
+    height: 100%;
+    margin: 17px;
+    text-align: left;
+    background-color :rgb(248, 246, 242)
+}
+#profile-pic-div{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    
+   
+}
+img{
+    border-radius: 50%;
+}
+#logoutbtn{
+    background-color: royalblue;
+    align-content: center;
+    margin-left: 200px;
+    
 }
