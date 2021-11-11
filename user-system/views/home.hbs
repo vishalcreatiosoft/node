@@ -53,6 +53,9 @@
         </div>
 
         <div class="right-column-home">
+            <form action="/showPost" method="GET">
+                <button type="submit" name="showPost" value="submit" id="logoutbtn">Show posts</button>
+            </form>
             <form action="/logout" method="POST">
                 <button type="submit" name="logout" value="submit" id="logoutbtn">Logout</button>
             </form>
@@ -62,5 +65,6 @@
 
 
     <script type="text/javascript" src="/js/dom.js"></script>
+    <script type="text/javascript" src="/js/posts.js"></script>
 </body>
 </html>

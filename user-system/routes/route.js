@@ -9,7 +9,7 @@ const { updateData } = require('../controllers/registration-control')
 router.use(express.static(__dirname+"./public/"))
 
 router.get('',(req, res)=>{
-    res.render('index')
+    res.render('login')
 })
 
 router.get('/login',(req, res)=>{
@@ -102,6 +102,14 @@ router.post('/post', async(req, res)=>{
    
     Registration.postData(postMessage)
 
+})
+
+router.get('/showPost', async(req, res)=>{
+
+    const getData = await Registration.getPostData()
+    const data = JSON.stringify(getData)
+    //console.log(data)
+    res.render('posts',{posts : data})
 })
 
 

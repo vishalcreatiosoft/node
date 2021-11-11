@@ -54,5 +54,13 @@ userRegistration.postData = async(postMessage)=>{
     }
 }
 
-
+userRegistration.getPostData = async()=>{
+    try{
+        const data = await Post.find({},{postmsg : 'This is virat page'})
+        //console.log(data)
+        return data
+    }catch(e){
+        console.log('Not get post data',e)
+    }
+}
 module.exports = userRegistration
