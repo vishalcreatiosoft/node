@@ -14,15 +14,42 @@
     <div class="row">
         <div class="left-column-home">
             <div class="profile-div" id="profile-div">
-                <h2 style="text-align: center;">Profile</h2>
+                <h2 style="text-align: center;margin-left:-60px">Profile</h2>
+                
                 <div id="profile-pic-div"></div>
+                <h4 id="name"></h4>
+                <h4 id="email"></h4>
+                <h4 id="phone"></h4>
+                <h4 id="company"></h4>
+                <h4 id="city"></h4>
+
+                <form action="/update" method="POST">                
+                    <button style="background-color:rgb(26, 26, 26);margin-left:50px" value="submit" name="updatebtn">Update Profile</button>                
+                </form>
+
             </div>
+           
 
         </div>
 
         <div class="middle-column-home" id="main-div">
             <h1>Welcome to User System</h1>
             <h6>{{info}}</h6>
+            
+            <h2 id="message-heading"></h2>
+
+            <div id="post">
+
+                <form action="/post" method="POST" id="post-form">
+                    <input type="text" name="postdata" id="post-message"  placeholder="write something here...">
+                    <button type="submit" value="submit"  id="postbtn">Post</button>
+                </form>
+            </div>
+
+
+
+
+
         </div>
 
         <div class="right-column-home">

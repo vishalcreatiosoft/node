@@ -1,9 +1,9 @@
 const Registration = require('../models/registration-model')
+const Post = require('../models/post-model')
 
+const userRegistration = {}
 
-const userRegistrtion = {}
-
-userRegistrtion.saveRegistration = async(userData)=>{
+userRegistration.saveRegistration = async(userData)=>{
     try{
         const register = new Registration(userData)
         const saveData = await register.save() 
@@ -13,7 +13,7 @@ userRegistrtion.saveRegistration = async(userData)=>{
     }
 }
 
-userRegistrtion.userLogin = async(email, password)=>{
+userRegistration.userLogin = async(email, password)=>{
     try{
         const checkUser = await Registration.find({email : email, password : password})
         if(checkUser.length == 0){
@@ -29,5 +29,30 @@ userRegistrtion.userLogin = async(email, password)=>{
     }
 }
 
+userRegistration.updateData = async(userData)=>{
+    try{
+        const update = await Registration.updateOne({email : userData.email}, {name : userData.name, phone : userData.phone, company : userData.company, city : userData.city})
+        if(update.length == 0){
+            return 0
+        }
+        else{
+            const updatedData = await Registration.findOne({email : userData.email})
+            return updatedData
+        }
+    }catch(e){
+        console.log('Error while updating data',e)
+    }
+}
 
-module.exports = userRegistrtion
+
+userRegistration.postData = async(postMessage)=>{
+    try{
+        const postmsg = new Post(postMessage)
+        const savepost = postmsg.save()
+    }catch(e){
+        console.log('Error whie posting',e)
+    }
+}
+
+
+module.exports = userRegistration
