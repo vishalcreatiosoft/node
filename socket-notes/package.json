@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "socket.io-client": "^4.3.2"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  },
+  "name": "client",
+  "version": "1.0.0",
+  "description": "socket.io demo",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "snowpack dev"
+  },
+  "author": "harshith",
+  "license": "ISC"
+}
