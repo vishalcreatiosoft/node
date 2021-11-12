@@ -1,0 +1,61 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.row{
+    height: 800px;
+    width: 100%;
+}
+
+.left-column{
+    width: 25%;
+    height: 100%;
+    float: left;
+    
+}
+.main-column{
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+}
+
+.right-column{
+    width: 25%;
+    height: 100%;
+    float: left;
+    
+}
+
+.screen{
+    width: 60%;
+    height: 600px;
+    background-color: bisque;
+    margin: auto;
+    padding: 5%;
+}
+
+.chat-box{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    background-color: whitesmoke;
+    border: 1px solid;
+}
+.message-box{
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    margin-top: 5%;
+    
+    
+}
+.room-box{
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    margin-top: 5%;
+        
+}
+
