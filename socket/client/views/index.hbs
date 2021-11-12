@@ -13,14 +13,22 @@
                 <h1 style="text-align: center;">Welcome to Chat App</h1>
 
                 <div class="screen">
-                    <div class="chat-box"></div>
-                        <form id="form">
-                            <div class="message-box">
+                    <div class="chat-box" id="chat-box"></div>
+                        <form  id="form">
+                            <div class="message-box" id="message-box">
                                 <label for="msg-input">Message</label>
                                 <input type="text" id="msg-input" name="message">
-                                <button type="submit" id="sendbtn">Send</button>
+                                <button type="submit" value="submit" id="sendbtn">Send</button>
                             </div>
                         </form>
+                        <form>
+                            <div class="room-box" id="room-box">
+                                <label for="room-input">Room </label>
+                                <input type="text" id="room-input" name="room">
+                                <button type="submit" id="room send">send</button>
+                            </div>
+                        </form>
+
                     
                     <div class="room-box"></div>
                 </div>
