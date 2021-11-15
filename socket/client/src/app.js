@@ -1,34 +1,37 @@
 const express = require('express')
 const path = require('path')
 const route = require('../routes/route')
-const io = require('socket.io-client')
-const socket = io('http://localhost:3000')
+const app = express();
+// const http = require('http').Server(express)
+//const io = require('socket.io')(http)
 
 
 
-const app = express()
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8080;
 
 const views_path = path.join(__dirname,'../views')
 const public_path = path.join(__dirname, '../public')
-app.set('views', views_path)
-app.set('view engine','hbs')
+
 app.use(express.static(public_path))
 app.use(route)
+app.use(express.json());
+app.use(express.urlencoded({extended:false}))
 
-//socket code start
+app.set('views', views_path)
+app.set('view engine','hbs')
 
-socket.on('connect',()=>{
-    console.log(`connected with server ${socket.id}`)
-})  
-//socket.emit('custom-event',4,'vishal')
-socket.emit('message','welcome to the chat application by creatiosoft')
-socket.on('received-message',(message)=>{
-    console.log(`${message} send by server`)
-})
-//socket code end
+// app.get('',(req, res)={
+//     console.log(res.json)
+// })
+
+// http.listen(8000,()=>{
+//     console.log('socket server is running on port 8000')
+// })
 
 
-app.listen(port,()=>{
-    console.log(`server is running on port ${port}`)
+
+
+
+app.listen(port, ()=>{
+    console.log(`express server is running on port ${port}`)
 })
