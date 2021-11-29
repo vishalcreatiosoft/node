@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="/js/dom.js"></script>
+    {{!-- <script src="/js/dom.js"></script> --}}
+  
     <title>Home</title>
 </head>
 <body>
 
     <div class="row">
 
-        <p>{{content}}</p>
+        <p>{{name}}</p>
 
         <div class="box">
-            <form action="sendEmail" method="POST">
+            <h2 id="center-heading"></h2>
+            <form action="sendEmail" method="POST" id="send-email-form">
             
             <table>
                 <tr>
                     <td><label for="email">Email</label></td>
-                    <td><input type="email" name="email"></td>
+                    <td><input type="email" name="email" id="email"></td>
                 </tr>
                 <tr>
                     <td><label for="content">Content</label></td>
@@ -42,8 +44,13 @@
             <button type="submit" value="submit" style="margin-left:100px;margin-top:10px;width: 100px; height:30px; background-color:rgb(42, 42, 241);color:white ">My Emails</button>
         </form>
 
+        <form action="/sentEmails" method="POST">
+            <button type="submit" value="submit" style="margin-left:100px;margin-top:10px;width: 100px; height:30px; background-color:rgb(42, 42, 241);color:white ">Sent</button>
+        </form>
+
         </div>
     </div>
+    <script type="text/javascript" src="/js/dom.js"></script>
 
 </body>
 </html>
